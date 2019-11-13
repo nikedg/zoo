@@ -1,4 +1,6 @@
+import { WildService } from './../services/wild.service';
 import { Component, OnInit } from '@angular/core';
+import { BeastsService } from '../services/beasts.service';
 
 @Component({
   selector: 'app-wild-card',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WildCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public wildSvc: WildService, public wilds: WildService) {
+    console.log('WildCardComponent ctor');
+  }
 
   ngOnInit() {
+    console.log('WildCardComponent ngOnInit');
   }
 
 }

@@ -1,1 +1,9 @@
-<p>beast-card works!</p>
+<div>
+        <h3>{{ beastsSvc.currentBeast.name }}</h3>
+        <div>size: {{ beastsSvc.currentBeast.size }}</div>
+        <div>lifeSpan: {{ beastsSvc.currentBeast.lifespan }}</div>
+        <div>habitat: {{ beastsSvc.currentBeast.habitat }}</div>
+       
+        <img [src]="beastsSvc.currentBeast.src"/>
+    </div>
+    

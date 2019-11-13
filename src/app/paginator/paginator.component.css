@@ -1,0 +1,9 @@
+img{width: 10vw;
+height: 60%;}
+
+.flex{
+    display: flex;
+    width: 30vw;
+    margin: auto;
+    justify-content: space-around;
+}

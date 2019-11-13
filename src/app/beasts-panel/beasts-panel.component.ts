@@ -1,3 +1,5 @@
+import { BeastsService } from 'src/app/services/beasts.service';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BeastsPanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(public beastsSvc: BeastsService) {
+    console.log('BeastsPanelComponent ctor')
+   }
 
   ngOnInit() {
   }

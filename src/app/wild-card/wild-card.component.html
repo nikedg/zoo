@@ -1,1 +1,7 @@
-<p>wild-card works!</p>
+<div> 
+    <h3>{{ wildSvc.wilds[wilds.currentWildIndex].name }}</h3>
+    <div>size: {{ wildSvc.wilds[wilds.currentWildIndex].size }}</div>
+    <div>lifeSpan: {{ wildSvc.wilds[wilds.currentWildIndex].lifeSpan }}</div>
+    <div>habitat: {{ wildSvc.wilds[wilds.currentWildIndex].habitat }}</div>
+    <img [src]="wildSvc.wilds[wilds.currentWildIndex].img"/>
+</div>

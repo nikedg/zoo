@@ -1,1 +1,17 @@
-<p>wilds-panel works!</p>
+<h1>Welcome to the Wilds display</h1>
+
+<div class='flex'>
+    <div class="wildlist">
+        <h2>our Wilds list</h2>
+        <ul>
+            <li *ngFor="let b of wildsSvc.wilds"> {{ b.name }} </li>
+        </ul>
+    </div>
+    <div class="wildCard">
+
+
+
+    <app-wild-card></app-wild-card>
+    </div>
+</div>
+

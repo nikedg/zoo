@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BirdService } from 'src/app/services/bird.service';
 
 @Component({
   selector: 'app-bird-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BirdCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public birdsSvc:BirdService) {
+    console.log('BirdCardComponent ctor');
+   }
 
   ngOnInit() {
+    console.log('BirdCardComponent ngOnInit');
   }
 
 }

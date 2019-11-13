@@ -1,3 +1,7 @@
+import { WildService } from './services/wild.service';
+import { BirdService } from './services/bird.service';
+import { BeastsService } from './services/beasts.service';
+import { AjaxService } from './services/ajax.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,7 +34,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AjaxService, BeastsService, BirdService, WildService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
