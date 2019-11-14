@@ -24,13 +24,13 @@ export class AppComponent {
         this.birds.currentBirdIndex = newBirdIndex;
         this.birds.currentBird = this.birds.birds[newBirdIndex];
         break;
-      case 'beasts':
+      case 'beasts': console.log('beasts');
         const newCowIndex = this.getNewCuurentIndex(
           this.beasts.currentBeastIndex, ev, this.beasts.beasts);
         this.beasts.currentBeastIndex = newCowIndex;
         this.beasts.currentBeast = this.beasts.beasts[newCowIndex];
         break;
-      case 'wilds':
+      case 'wilds': console.log('beasts');
         const newWildIndex = this.getNewCuurentIndex(
           this.wilds[this.wilds.currentWildIndex], ev, this.wilds.wilds);
         this.wilds[this.wilds.currentWildIndex] = newWildIndex;
